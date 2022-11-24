@@ -10,11 +10,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { CakeDetailsComponent } from './components/cake-details/cake-details.component';
 import { CakeCreateComponent } from './components/cake-create/cake-create.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     CakeDetailsComponent,
-    CakeCreateComponent
+    CakeCreateComponent,
+
   ],
   imports: [
     BrowserModule,

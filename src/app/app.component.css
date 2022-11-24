@@ -1,0 +1,33 @@
+.container-0{
+  margin: 20px;
+  border: 2px solid red;
+}
+
+.container-1{
+  margin: 20px;
+  border: 2px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.listOfCakes{
+  width: 600px;
+  height: 600px;
+  margin: 20px;
+  border: 2px solid red;
+  overflow: scroll
+}
+
+.container-cake{
+  margin: 20px;
+  border: 2px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.cakeImg{
+  width: 250px;
+  height: 250px;
+}
+

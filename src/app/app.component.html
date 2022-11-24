@@ -1,34 +1,20 @@
 <br><br>
-<main>
-  <article class="primeraSeccion">
+<main class="container-0">
+  <section class="container-1">
     <app-cake-create></app-cake-create>
-
-      <section class="listProduct" >
-        <div *ngFor="let item of listOfCakes">
-            <table class="tblProducto">
-              <tr>
-                <td rowspan="4" align="center" width="30%"><img class="imgList" src="{{item.cakeImg}}" alt=""></td>
-              </tr>
-              <tr>
-                  <td><b>Usuario</b></td>
-                  <td colspan="2">:{{item.userName}}</td>
-              </tr>
-              <tr>
-                <td><b>Calificación</b></td>
-                <td colspan="2">:{{item.stars}} estrellas</td>
-              </tr>
-              <tr>
-                <td><b>Comentario</b></td>
-                <td colspan="2">:{{item.comment}}</td>
-              </tr>
-              <tr>
-                <td colspan="3" align="right"> <button (click)="showCake(item)">Show</button></td>
-              </tr>
-            </table>
-        </div>
-      </section>
-  </article>
-  <article>
+    <article class="listOfCakes" >
+      <div class="container-cake" *ngFor="let item of listOfCakes" >
+        <img class="cakeImg" src="{{item.cakeImg}}" alt="cake_img">
+        <ul>
+          <li>Name: {{item.userName}}</li> <br>
+          <li>Ranking: {{item.stars}} stars</li><br>
+          <li>Comment: {{item.comment}}</li><br>
+          <button (click)="showCake(item)">Details</button><br>
+        </ul>
+      </div>
+    </article>
+  </section>
+  <article class="container-2">
     <app-cake-details *ngIf="selectedCake" [cakeToShow]="selectedCake"></app-cake-details>
   </article>
 </main>

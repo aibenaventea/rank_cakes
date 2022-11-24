@@ -1,35 +1,17 @@
-
-<div class="detailFrame">
-  <br>
-  <h1>Made by {{cakeToShow.userName}}</h1>
-  <br>
-  <section class="listProduct">
-    <div>
-      <table class="tblProducto">
-        <tr>
-          <td rowspan="4" align="center" width="30%"><img class="imgList" src="{{cakeToShow.cakeImg}}" alt=""></td>
-        </tr>
-        <tr>
-          <td colspan="3" align="right">
-            <form (submit)="onEditCake()">
-              <p><select class="campoIngreso" name="editCake.stars" [(ngModel)]="cakeToShow.stars">
-                  <option value="1">1 Star</option>
-                  <option value="2">2 Stars</option>
-                  <option value="3">3 Stars</option>
-                  <option value="4">4 Stars</option>
-                  <option value="5">5 Stars</option>
-                </select>
-              </p>
-              <br>
-              <p>
-                <input class="campoIngreso" type="text" name="cakeToShow.comment" [(ngModel)]="cakeToShow.comment"></p>
-              <br>
-              <p><input class="button" type="submit" value="Comentar"></p>
-            </form>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </section>
-
-</div>
+<section class="container-section">
+  <h1 class="title">Made by {{cakeToShow.userName}}</h1>
+  <article class="container-rank">
+      <img class="cakeImg" src="{{cakeToShow.cakeImg}}" alt=""><br>
+      <form (submit)="onEditCake()">
+        <select name="editCake.stars" [(ngModel)]="cakeToShow.stars">
+          <option value="1">1 Star</option>
+          <option value="2">2 Stars</option>
+          <option value="3">3 Stars</option>
+          <option value="4">4 Stars</option>
+          <option value="5">5 Stars</option>
+        </select><br>
+        <p><input type="text" name="cakeToShow.comment" [(ngModel)]="cakeToShow.comment"></p><br>
+        <p><input type="submit" value="Comentar"></p>
+      </form>
+  </article>
+</section>

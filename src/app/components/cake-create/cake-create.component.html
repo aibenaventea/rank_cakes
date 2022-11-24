@@ -1,24 +1,14 @@
-
-
 <form (submit)="onCakeCreate()">
-  <section class="ingreso">
-      <h1>{{title}}</h1><br>
-      <div class="camposTitulo"><b>Nombre</b></div>
-      <br>
-      <div>
-        <input class="campoIngreso" type="text" name="cakeCreate.userName" [(ngModel)]="cakeCreate.userName">
-      </div>
-      <br>
-      <div class="camposTitulo"><b>Url Img</b></div>
-      <br>
-      <div><select class="campoIngreso" name="cakeCreate.cakeImg" [(ngModel)]="cakeCreate.cakeImg">
+  <section >
+      <h1>{{title}}</h1>
+      <p>Name</p>
+      <input type="text" name="cakeCreate.userName" [(ngModel)]="cakeCreate.userName"><br>
+      <p>Cake Image</p>
+      <select name="cakeCreate.cakeImg" [(ngModel)]="cakeCreate.cakeImg">
           <option value="../assets/img/chocCake.jpg">Queque de Chocolate</option>
           <option value="../assets/img/lemonCake.jpg">Queque de Limon</option>
           <option value="../assets/img/strawBerryCake.jpg">Queque de Frutilla</option>
-        </select>
-      </div>
-      <br>
-      <div><input class="button" type="submit" value="Enviar"></div>
-
+        </select><br>
+      <p><input type="submit" value="Send"></p>
   </section>
   </form>

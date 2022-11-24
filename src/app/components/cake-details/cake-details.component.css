@@ -1,0 +1,22 @@
+.container-section{
+  margin: 20px;
+  border: 2px solid red;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+.container-rank{
+  margin: 20px;
+  width: fit-content;
+  border: 2px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.title{
+  margin: 20px;
+}
+.cakeImg{
+  width: 250px;
+  height: 250px;
+}
